@@ -2,7 +2,6 @@ import requests, urllib
 url = 'https://raw.githubusercontent.com/CriMenghini/ADM/master/2019/Homework_3/data/movies1.html'
 response = requests.get(url)
 
-
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(response.text, 'lxml')
 
